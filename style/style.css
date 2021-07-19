@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+body{
+    margin: 0px 0px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+/*font-family: 'Crimson Text', serif;*/
+nav{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav h1{
+    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+    color: #fff;
+}
+.navbar{
+    background: #003C36;
+    padding: 1.2rem;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+nav .onglets{
+    margin-top: 35px;
+}
+nav .onglets a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+    color: #fff;
+    margin-right: 10px;
+}
+.onglets a:hover{
+    opacity: 0.7;
+}
+.articles{
+    margin-top: 30px;
+}
+.articles .article{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.articles .article .left img{
+    height:300px;
+    width:600px;
+    margin-left:30px ;
+
+}
+img{
+    height:300px;
+    width:600px; 
+
+}
+.articles .article .right{
+    max-width: 50%;
+    margin-left: 30px;
+}
+.articles .article .right p.date{
+   color: #7f7e7e;
+}
+.articles .article .right p.description{
+    color: #2d2d2d;
+ }
+footer{
+    background: #003C36;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-media a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+ 
+ footer span{
+     font-size: 20px;
+     font-family: 'Crimson Text', serif;
+ }
+ .about{
+     padding: 4.5rem 0;
+ }
+ .about-text{
+     margin: 2rem 0;
+ }
+ .about-text > p{
+     font-size: 1.1rem;
+     padding: 0.6rem 0;
+     opacity: 0.8;
+ }
+ h2{
+     color: #7f7e7e;
+     font-family: 'Crimson Text', serif;
+
+ }
+ p{
+     color: #2d2d2d;
+ }
+ 
+ @media screen and (max-width:640px) {
+     body{
+         margin: 10px 20px;
+     }
+     nav .onglets{
+         margin-top: 10px 20px;
+     }
+     .articles .article .left img{
+         height: 100%;
+         width: 100%;
+     }
+     .articles .article .right{
+         margin: 0;
+         max-width: 100px;
+     }
+     footer .social-media{
+         margin-top: -20px;
+     }
+     
+ }

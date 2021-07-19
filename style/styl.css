@@ -1,0 +1,137 @@
+
+body{
+    margin: 0;
+    font-size: 16px;
+    background-color: #009688;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+}
+.custom{
+    max-width: 700px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+}
+@keyframes fadeInRight{
+    0%{
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.custom::before,
+.custom::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.result{
+    text-align: center;
+}
+.result h1{
+    font-size: 36px;
+    line-height: 42px;
+    color:#009688;
+}
+.result table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+.result table td{
+    border: 1px solid #cccccc;
+    padding: 8px 15px;
+    font-weight: 500;
+    color: #000000;
+    width: 125px;
+    text-align: left;
+    font-size: 18px;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: Verdana;
+    font-weight: bold;
+    height: 90px;
+    width: 350px;
+    margin: 5px 0;
+    float: left;
+    background-color:#b9d639;
+    color: white;
+    line-height: 90px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav h1{
+    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+    color: #fff;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+nav .onglets{
+    margin-top: 35px;
+}
+nav .onglets a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+    color: #fff;
+    margin-right: 10px;
+}
+.onglets a:hover{
+    opacity: 0.7;
+}
+footer{
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-media a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+ 
+ footer span{
+     font-size: 20px;
+     font-family: 'Crimson Text', serif;
+ }
